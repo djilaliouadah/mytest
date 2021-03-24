@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="header" id="top">
+		  <h1>Facture</h1>
+		  <p>Bienvenue chez Nous. <span class="red">Si vous voulez que le retour en haut fonctionne ouvrez l'html sur tous les navigateur sauf IE ;)</span></p>
+		</div>
+		<div class="topnav">
+		  <a href="#">Exercice</a>
+		  <a href="#gotoone">Pour aller plus loin</a>
+		</div>
+		<div class="row order">
+			<div class="column side">
+				<h2>Fournisseur</h2>
+				<form action="#" method="post">
+					<fieldset>
+						<legend> Fournisseur : ? </legend>
+						<select>
+						  <option value="f1">Fournisseur 1</option>
+						  <option value="f2">Fournisseur 2</option>
+						  <option value="f3">Fournisseur 3</option>
+						  <option value="f4">Fournisseur 4</option>
+						</select>
+					</fieldset>
+				</form>
+			</div>
+			<div class="column middle">
+				<h2>Formulaire</h2>
+				<form action="#" method="post"  onsubmit="return mfValidation(this)" class="invisiblemobile">
+					<fieldset>
+						<legend> Information  : ? </legend>
+						<input type="radio" name="type" value="perso" onclick="personnel();"> Personnel&nbsp;&nbsp;
+						<input type="radio" name="type" value="prof" checked onclick="professionel();"> Professionel<br>
+						<br>
+						<div id="tva">
+							N° TVA <span class="red">*</span>:<br>
+							<input type="text" name="tva" required><br><br>
+						</div>
+						Prénom :<br>
+						<input type="text" name="firstname"><br><br>
+						Nom :<br>
+						<input type="text" name="lastname">
+						<br><br>
+						<div id="gender">
+						</div>
+						Email :<br>
+						<input type="text" name="mail">
+						<br><br>
+						N° Téléphone :<br>
+						<input type="text" name="phone">
+						<br><br>
+						Adresse :<br>
+						<input type="textarea" name="adresse">
+						<br><br>
+						Provinces :<br>
+						<select name="region" id="region" onchange="ville()">
+						  <option value="">....</option>
+						  <option value="f2">Hainaut</option>
+						  <option value="f3">Brabant Wallon</option>
+						  <option value="f4">Liège</option>
+						  <option value="f4">Namur</option>
+						</select>
+						<br><br>
+						Ville :<br>
+						<div id="ville">
+							<input type="text" name="Ville">
+						</div>
+						<br><br>
+						Code postale :<br>
+						<input type="text" name="code">
+						<br><br><br>
+						<input type="submit"><input type="reset">
+					</fieldset>
+				</form>
+				<form action="#" method="post">
+					<fieldset>
+						<legend> Paiement  : ? </legend>
+						Propriétaire <span class="red">*</span> :<br>
+						<input type="text" name="owner" class="ownerinput" required>
+						CVV :
+						<input type="text" name="cvv" id="cvv"  id="cvv" class="cartnumberwidth"><br>
+						Numéro de carte :<br>
+						<input type="text" name ="num_carte">
+						Date expiration :<br>
+						<select name="month" class="expirationdateselect">
+							<option></option>
+							<option>01</option>
+							<option>02</option>
+							<option>03</option>
+							<option>04</option>
+							<option>05</option>
+							<option>06</option>
+							<option>07</option>
+							<option>08</option>
+							<option>09</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+						</select name="year">
+						<select class="expirationdateselect">
+							<option></option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+						</select>
+						<br><br>					
+						<input type="submit"><input type="reset">
+					</fieldset>
+				</form>	
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="gotoone">
+			<div class="block margin">
+				<h2>Animation en css</h2>
+				<div class="box">
+					<div class="text animated bounce">Bounce</div>
+				</div>
+				<div class="box hingebox">
+					<p class="text animated hinge">Hinge</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<button id="myBtn"><a href="#top">Top</a></button>
+	</body>
+<html>

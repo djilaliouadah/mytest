@@ -1,0 +1,270 @@
+.header {
+	background-color: #F1F1F1;
+	text-align: center;
+	padding: 20px;
+}
+/* Style the top navigation bar */
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+	float: left;
+}
+
+/* Left and right column */
+.column.side {
+	width: 40%;
+}
+
+/* Middle column */
+.column.middle {
+	width: 50%;
+}
+
+body {
+	font-family:"trebuchet ms",sans-serif;
+	font-size:90%;
+ }
+form {
+	background-color:#FAFAFA;
+	padding:10px;
+	width:280px;
+ }
+fieldset {
+	padding:0 20px 20px 20px;
+	margin-bottom:10px;
+	border:1px solid #DF3F3F;
+ }
+legend {
+	color:#DF3F3F;
+	font-weight:bold
+ }
+label {
+	margin-top:10px;
+	display:block;
+ }
+label.inline {
+	display:inline;
+	margin-right:50px;
+ }
+input, textarea, select, option {
+	background-color:#FFF3F3;
+ }
+input, textarea, select {
+	 padding:3px;
+	 border:1px solid #F5C5C5;
+	 border-radius:5px;
+	 width:200px;
+	 box-shadow:1px 1px 2px #C0C0C0 inset;
+ }
+select {
+	margin-top:10px;
+ }
+input[type=radio] {
+	background-color:transparent;
+	border:none;
+	width:10px;
+ }
+input[type=submit], input[type=reset] {
+	width:100px;
+	margin-left:5px;
+	box-shadow:1px 1px 1px #D83F3D;
+	cursor:pointer;
+ }
+ input:focus, textarea:focus {
+	background-color:white;
+ }
+input[type=submit]:focus, input[type=reset]:focus {
+	background-color:#FFF3F3;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+	background-color:#FCDEDE;
+ }
+input[type=submit]:active, input[type=reset]:active {
+	background-color:#FCDEDE;
+	box-shadow:1px 1px 1px #D83F3D inset;
+}
+.ownerinput {
+	width: 140px;
+}
+
+.cartnumberwidth {
+	width: 41px;
+}
+
+.expirationdateselect {
+	width: 50px;
+}
+
+.red {
+	color: red;
+	}
+	
+.clear {
+	clear:both;
+}
+
+
+.margin {
+margin: 800px auto 20px;
+}
+	
+/* Block aller plus loin */	
+h2 {
+	text-align:center;
+	color: white;
+}
+
+.block {
+	border-radius: 15px;
+    border: 1px solid #c5c1c0;
+    background-color: #333;
+	padding: 24px 15px;
+	width: 340px;
+}
+
+/*Animation*/
+.box {
+  width: 160px;
+  height: 120px;
+  float: left;
+  background: #347fc3;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.text {
+  text-align: center;
+  margin-top: 56px;
+  color: #fff;
+  font-size: 1.0em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+.bounce {
+  animation-name: bounce;
+}
+
+@keyframes hinge {
+  0% {transform: rotate(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+  20%, 60% {transform: rotate(80deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+  40% {transform: rotate(60deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+  80% {transform: rotate(60deg) translateY(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+  100% {transform: translateY(700px);}
+}
+.hinge {
+  margin: 20px;
+  animation-name: hinge;
+}
+ .hingebox {
+	 margin-left:15px;
+ }
+
+/*bouton to the top */
+ #myBtn {
+        position: fixed;
+        bottom: 10px;
+        float: right;
+        left: 95%;
+        max-width: 30px;
+        width: 100%;
+        font-size: 12px;
+        background-color: black;
+        padding: 3px;
+        border-radius: 4px;
+
+    }
+
+#myBtn a {
+	color: white;
+	text-decoration: none;
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+	background-color: blue;
+}
+
+/* permet changer caractéristique site en fonction taille écran en pixels (inférieur à 800 puis à 600) */
+@media screen and (max-width: 800px) {
+	input, textarea, select {
+	 border:3px solid green;
+	 box-shadow:0px 0px 0px #C0C0C0 inset;
+ }
+
+   fieldset {
+	 border: 1px solid green;
+ }
+ 
+ form {
+	 width: 90%;
+	 background: #ccc;
+ }
+ 
+ legend {
+	 color: green;
+ }
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+		width: 100%;
+  }
+  
+  input, textarea, select {
+	 border:1px solid blue;
+	 box-shadow:4px 4px 2px #C0C0C0 inset;
+ }
+  fieldset {
+	 border: 1px solid blue;
+ }
+ 
+ form {
+	 width: 90%;
+	 background: #333;
+ }
+ 
+  legend {
+	 color: blue;
+ }
+ 
+ .invisiblemobile {
+	 display:none;
+ }
+ 
+ /*permet de changer l'ordonnancement de vos block*/
+ .order {
+	 display: flex;
+	 flex-direction: column-reverse
+}
+}
